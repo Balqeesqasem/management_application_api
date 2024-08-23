@@ -16,12 +16,15 @@
    cd task_management
 
 
-2. **I may send the whole file in the submission link if the clone not work:**
+ **I may send the whole file in the submission link if the clone not work**
 
+
+
+ **Now we need run the following command to alllow us hit API succsfully**
 
 ```bash
-bundle install //to install all gems
-rails db:create // to create DB locally
-rails db:migrate
+    bundle install //to install all gems
+    rails db:create // to create DB locally
+    rails db:migrate
 
-rails server
+    rails server
