@@ -18,6 +18,7 @@ class TasksController < ApplicationController
   # GET /tasks
   def index
     tasks = Task.all
+    tasks = tasks.filter_records(task_filters) if task_filters.present?
     render json: TaskSerializer.render(tasks)
   end
 
@@ -55,5 +56,9 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(:title, :description, :status, :tag, :priority)
+  end
+
+  def task_filters
+    params.permit(:status, :tag, :priority)
   end
 end

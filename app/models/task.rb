@@ -13,6 +13,14 @@ class Task < ApplicationRecord
   enum status: STATUSES
   enum tag: TAGS
 
+  concerning :Filtering do
+    class_methods do
+      def filterable_attributes
+        ["status", "tag", "priority"]
+      end
+    end
+  end
+
   private
 
   # Validate unique priority within the same tag
