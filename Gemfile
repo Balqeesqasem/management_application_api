@@ -21,6 +21,11 @@ gem "redis", ">= 4.0.1"
 # Use postgresql as the database for Active Record
 gem "pg"
 
+gem "pry"
+
+# Serlialize AcitveRecord objects to JSON
+gem "blueprinter"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
