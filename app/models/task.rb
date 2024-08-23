@@ -1,16 +1,21 @@
 class Task < ApplicationRecord
-  # Constant
-  STATUS = [PENDING = "pending", IN_PROGRESS = "in_progress", COMPLETED = "completed", CANCELLED = "cancelled", ON_HOLD = "on_hold"]
-  TGA = [BACK_END = "back_end", FRONT_END = "front_end", DESIGN = "design", OTHERS = "others"]
+  # Constants
+  STATUSES = [PENDING = "pending", IN_PROGRESS = "in_progress", COMPLETED = "completed", CANCELLED = "cancelled", ON_HOLD = "on_hold"]
+  TAGS = [BACK_END = "back_end", FRONT_END = "front_end", DESIGN = "design", OTHERS = "others"]
 
-  #Validations
+  # Validations
   validates :title, :description, :status, presence: true
+  validates :status, inclusion: { in: STATUSES, message: "must be one of #{STATUSES.join(", ")}" }
+  validates :tag, inclusion: { in: TAGS, message: "must be one of #{TAGS.join(", ")}" }
   validate :unique_priority_within_tag
 
-  #Enum
-  enum status: STATUS
-  enum tag: TGA
+  # Enum
+  enum status: STATUSES
+  enum tag: TAGS
 
+  private
+
+  # Validate unique priority within the same tag
   def unique_priority_within_tag
     return if tag.blank? || priority.blank?
 
