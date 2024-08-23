@@ -13,6 +13,7 @@ class Task < ApplicationRecord
   enum status: STATUSES
   enum tag: TAGS
 
+  # Filterations
   concerning :Filtering do
     class_methods do
       def filterable_attributes

@@ -22,7 +22,7 @@ class TasksController < ApplicationController
     render json: TaskSerializer.render(tasks)
   end
 
-  # PATCH/PUT /tasks/1
+  # PATCH/PUT /tasks/:id
   def update
     begin
       if @task.update(task_params)
@@ -35,12 +35,12 @@ class TasksController < ApplicationController
     end
   end
 
-  # GET /tasks/1
+  # GET /tasks/:id
   def show
     render json: TaskSerializer.render(@task)
   end
 
-  # DELETE /tasks/1
+  # DELETE /tasks/:id
   def destroy
     @task.destroy
     head :ok
