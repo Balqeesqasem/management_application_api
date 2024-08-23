@@ -1,24 +1,27 @@
-# README
+# Task Managment API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+- Ruby 3.2.2
+- Rails 7.2.1
+- PostgreSQL 
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. **Clone the repository If you have acccess as follow:**
 
-* Configuration
+   ```bash
+   git clone https://github.com/Balqeesqasem/ClientTrip-management_application_API.git
+   cd ClientTrip-management_application_API
+   cd task_management
 
-* Database creation
 
-* Database initialization
+2. **I may send the whole file in the submission link if the clone not work:**
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bundle install //to install all gems
+rails db:create // to create DB locally
+rails db:migrate
 
-* Deployment instructions
-
-* ...
+rails server
