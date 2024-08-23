@@ -8,6 +8,11 @@ This API is a task management application built with Ruby on Rails. It allows us
 - **Filter Tasks**: Filter tasks based on status, tag, or priority.
 - **Validate Input**: Ensure that task data meets specified criteria, including unique priorities within the same tag.
 
+## Postman Documentation
+
+You can view the API documentation and test the endpoints using Postman at the following URL:
+
+[Postman Documentation](https://documenter.getpostman.com/view/11123143/2sAXjF7Zow)
 
 ## Prerequisites
 
@@ -38,9 +43,5 @@ This API is a task management application built with Ruby on Rails. It allows us
 
     rails server
 
-## Postman Documentation
 
-You can view the API documentation and test the endpoints using Postman at the following URL:
-
-[Postman Documentation](https://documenter.getpostman.com/view/11123143/2sAXjF7Zow)
 
