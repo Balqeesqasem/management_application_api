@@ -20,7 +20,7 @@
 
 
 
- **Now we need run the following command to alllow us hit API succsfully**
+ **Now we need run the following command to alllow us hit API succsfully:**
 
 ```bash
     bundle install //to install all gems
