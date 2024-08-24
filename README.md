@@ -46,7 +46,7 @@ You can view the API documentation and test the endpoints using Postman at the f
 
 ## For Docker
 
-# Additionally, you can use Docker. After cloning the code, run the following commands, and the server will be up without needing to install anything: 
+## Additionally, you can use Docker. After cloning the code, run the following commands, and the server will be up without needing to install anything: 
 
    ```bash
       docker-compose build --no-cache
