@@ -43,5 +43,14 @@ You can view the API documentation and test the endpoints using Postman at the f
 
     rails server
 
+```
+
+# You can use Docker also just after you clone the code you can run the following commands and the server will be up withoy installing anything: 
+
+   ```bash
+      docker-compose build --no-cache
+      docker-compose up
+
+
 
 
