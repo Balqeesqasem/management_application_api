@@ -27,13 +27,12 @@ You can view the API documentation and test the endpoints using Postman at the f
    ```bash
    git clone https://github.com/Balqeesqasem/ClientTrip-management_application_API.git
    cd ClientTrip-management_application_API
-   cd task_management
 
 
  **I may send the whole file in the submission link if the clone not work**
 
 
-
+## For Normal Installation
  **Now we need run the following command to alllow us hit API succsfully:**
 
 ```bash
@@ -42,6 +41,17 @@ You can view the API documentation and test the endpoints using Postman at the f
     rails db:migrate
 
     rails server
+
+```
+
+## For Docker
+
+## Additionally, you can use Docker. After cloning the code, run the following commands, and the server will be up without needing to install anything: 
+
+   ```bash
+      docker-compose build --no-cache
+      docker-compose up
+
 
 
 
