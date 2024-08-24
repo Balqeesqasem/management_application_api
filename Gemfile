@@ -23,6 +23,9 @@ gem "pg"
 
 gem "pry"
 
+gem 'rack-cors'
+
+
 # Serlialize AcitveRecord objects to JSON
 gem "blueprinter"
 
